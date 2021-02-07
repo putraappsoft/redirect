@@ -1,28 +1,34 @@
 <html>
 	<head>
 		<title>Fluid Player</title>
-		<link rel="stylesheet" href="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
-<script src="http://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script> 
-		</head>
-		<body>
-<video id='video-id'>
-	<source src="https://firebasestorage.googleapis.com/v0/b/bpshow-d6ea4.appspot.com/o/ROSE%20-%20%22GONE%22%20MV%20and%20PERFOMANCE.mp4?alt=media&token=d46a7892-aff4-45f2-b764-9a7998a2cd5e" title="720p" type="video/mp4">
-</video>
+  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" /> <link href="tes.css" rel=stylesheet" />
 
-<script>
-	var myFP = fluidPlayer(
-		'video-id',
-		{
-		  vastOptions: {
-		   "adList" : [
-			{
-			"roll" : "preRoll",
-			"vastTag" : "https://syndication.exoclick.com/splash.php?idzone=2366423"
-			}
-		   ]
-		  }
-		}
-	);
-</script>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="MY_VIDEO.mp4" type="video/mp4" />
+    <source src="MY_VIDEO.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
 </html>
