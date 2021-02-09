@@ -1,15 +1,51 @@
 <html>
- <head> 
-  <title>Putra Infotainment</title> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="shortcut icon" href="img/favicon.ico"> 
- </head> 
- <body> 
-  <div id="wrap"> 
-   <video width="100%" height="auto" poster="https://github.com/putraappsoft/video-asset/raw/main/img/2021-01-30_20-04-09.jpg" loop="" autoplay="" controls>
-<source src="https://putraappsoft.netlify.app/Welcome%20to%20Putra%20Production.mp4" type="video/mp4" />
-</video>
-  </div> 
- </body>
+	<head>
+		<title>Putra Infotainment</title>
+  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+
+<body>
+	<div class="video-js-responsive-container vjs-hd">
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    poster="https://github.com/putraappsoft/video-asset/raw/main/img/2021-01-30_20-04-09.jpg"
+    data-setup="{}"
+  >
+    <source src="https://putraappsoft.netlify.app/Welcome%20to%20Putra%20Production.mp4" type="video/mp4" />
+   
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+</div>
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <style type="text/css">
+  .video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  </style>
+</body>
 </html>
